@@ -2,11 +2,15 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
+/* roboto font family */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* body {
@@ -130,6 +134,19 @@ header {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 6px;
+}
+
+.star {
+  color: #fb8200;
+  font-size: 13px;
+}
+.point {
+  color: var(--gray-80, #5e6366);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  margin-left: 10px;
 }
 .gallery-description {
   color: var(--Gray-50, #787885);
