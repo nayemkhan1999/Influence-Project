@@ -77,8 +77,43 @@ header {
   border: none;
   margin-top: 16px;
 }
+.img-flued {
+  width: 100%;
+  height: auto;
+}
 /* Header Section Ends 
 ----------------------*/
+
+/* Sponsor Section starts hare */
+.sponsor-section {
+  width: 100%;
+  height: auto;
+  padding: 50px 160px;
+}
+
+.sponsor-section img {
+  margin-right: 80px;
+  margin-top: -80px;
+}
+
+/* Popular Gallery section starts hare */
+.popular-gallery-section {
+  width: 100%;
+  height: 900px;
+  padding: 50px 200px;
+  border: 1px solid red;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery section {
+  background-color: #aaa;
+  border: 5px solid #555;
+}
 
 /* Responsive mobile version */
 @media screen and (max-width: 576px) {
@@ -87,10 +122,68 @@ header {
     width: 100%;
     padding: 20px;
   }
+  .responsive {
+    border: 15px solid purple;
+    border-radius: 15px;
+    padding: 0px 20px;
+  }
   .nav-bar {
     flex-direction: column;
   }
-  .img-content {
-    width: 440px;
+  .img-flued {
+    width: 100%;
+    height: auto;
+    /* width: 440px; */
+  }
+
+  /* Sponsor Section */
+  .sponsor-section {
+    width: 100%;
+    height: auto;
+    padding: 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+  .sponsor-section img {
+    width: 80%;
+    height: auto;
+  }
+  .responsive {
+    border: 15px solid purple;
+    border-radius: 15px;
+    padding: 0px 20px;
+  }
+}
+
+/* responsive laptop version 
+----------------------------*/
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .banner {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 20px;
+  }
+  .img-flued {
+    width: 100%;
+    height: auto;
+  }
+
+  .responsive {
+    border: 15px solid purple;
+    border-radius: 15px;
+    padding: 0px 20px;
+  }
+
+  /* sponsor section */
+  .sponsor-section {
+    padding: 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+
+  .sponsor-section img {
+    margin: 0px auto;
   }
 }
