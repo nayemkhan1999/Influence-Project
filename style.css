@@ -1,0 +1,96 @@
+/* Poppins font link by google  */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* body {
+   width: 1350px;
+  height: 3306px;
+  overflow: hidden; 
+} */
+
+header {
+  width: 100%;
+  height: auto;
+  padding: 50px 120px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bar ul {
+  display: flex;
+  gap: 34px;
+}
+.nav-bar li {
+  list-style: none;
+}
+.nav-bar li a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.title-primary {
+  color: #3a3a3a;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Banner Section */
+.banner {
+  margin-top: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner-text {
+  font-size: 52px;
+}
+
+.description-primary {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.btn-primary {
+  padding: 10px 24px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 41px;
+  background: #e02c6d;
+  border: none;
+  margin-top: 16px;
+}
+/* Header Section Ends 
+----------------------*/
+
+/* Responsive mobile version */
+@media screen and (max-width: 576px) {
+  .banner {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 20px;
+  }
+  .nav-bar {
+    flex-direction: column;
+  }
+  .img-content {
+    width: 440px;
+  }
+}
